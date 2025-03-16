@@ -48,10 +48,10 @@
   <script>
     async function checkServerReady() {
       try {
-        const response = await fetch("https://classement.onrender.com/ping", { cache: "no-store" });
+        const response = await fetch("https://your-render-app-url.com/ping", { cache: "no-store" });
 
         if (response.ok) {
-          window.location.href = "https://classement.onrender.com/"; // Redirect to main page once the server is ready
+          window.location.href = "https://your-render-app-url.com"; // Redirect to main page once the server is ready
         } else {
           throw new Error('Server not ready');
         }
